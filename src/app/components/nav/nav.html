@@ -1,0 +1,31 @@
+<nav class="flex items-center justify-between max-w-6xl mx-auto py-6 px-6">
+  <div class="flex items-center gap-3">
+    <div
+      class="w-10 h-10 rounded-full bg-amber-400/10 flex items-center justify-center text-amber-600 font-bold"
+    >
+      CA
+    </div>
+    <div>
+      <div class="text-sm font-semibold text-amber-600 dark:text-amber-400">Christopher Alba</div>
+      <div class="text-xs text-gray-600 dark:text-gray-400">Software Engineer</div>
+    </div>
+  </div>
+
+  <div class="flex items-center gap-3">
+    <a
+      href="cv.pdf"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="hidden sm:inline-block bg-amber-400 hover:bg-amber-500 text-white font-medium px-4 py-2 rounded-lg shadow"
+      >Resume</a
+    >
+
+    <button
+      (click)="toggleDarkMode()"
+      aria-label="Toggle dark mode"
+      class="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 hover:bg-gray-200 dark:hover:bg-gray-700 transition"
+    >
+      {{ isDark ? '☀️' : '🌙' }}
+    </button>
+  </div>
+</nav>

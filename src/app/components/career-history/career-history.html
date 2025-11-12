@@ -1,0 +1,12 @@
+<section class="mt-10">
+  <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-md p-8">
+    <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100">Career History</h2>
+    <div class="mt-6 space-y-6 text-gray-700 dark:text-gray-300">
+      <div *ngFor="let job of jobs">
+        <h3 class="font-semibold text-lg text-gray-900 dark:text-white">{{ job.title }}</h3>
+        <p class="text-sm text-gray-500 dark:text-gray-400">{{ job.company }} — {{ job.period }}</p>
+        <p class="mt-2">{{ job.description }}</p>
+      </div>
+    </div>
+  </div>
+</section>
