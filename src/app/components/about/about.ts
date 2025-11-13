@@ -8,5 +8,19 @@ import { Component } from '@angular/core';
   styleUrl: './about.scss',
 })
 export class About {
-
+  items = [
+    'ASP.NET C#',
+    'Angular',
+    'TypeScript',
+    'CSS',
+    'JavaScript',
+    'PostgresQL',
+    'HTML',
+    'SCSS',
+    'AWS',
+    'Docker',
+    'Git',
+    'Tailwind CSS',
+    'Terraform'
+  ];
 }
